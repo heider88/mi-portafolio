@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-dark: #0B0F19;
+  --color-cian-neon: #00f2ff;
+  --color-violet-accent: #8b5cf6;
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-outfit: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-deep-dark text-gray-200 antialiased font-sans selection:bg-cian-neon/30 selection:text-cian-neon;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-glass-bg backdrop-blur-md border border-glass-border rounded-2xl transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply border-cian-neon/50 shadow-[0_0_20px_rgba(0,242,255,0.1)] -translate-y-1;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cian-neon via-violet-accent to-cian-neon;
+  }
+}
