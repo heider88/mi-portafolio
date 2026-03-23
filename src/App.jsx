@@ -17,7 +17,7 @@ function App() {
 
       <Navbar />
 
-      <main className="container mx-auto px-6 pt-24 pb-12 space-y-32">
+      <main className="container mx-auto px-6 pt-24 pb-12 space-y-20 md:space-y-32">
         <Hero />
         <About />
         <Skills />

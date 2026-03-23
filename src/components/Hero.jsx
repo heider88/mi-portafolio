@@ -33,7 +33,7 @@ const Hero = () => {
                     <span className="text-cian-neon font-mono text-sm tracking-widest uppercase">Hello World, I am</span>
                 </div>
 
-                <h1 className="text-5xl md:text-7xl font-outfit font-extrabold text-white mb-6 leading-tight flex flex-col items-start gap-2">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-outfit font-extrabold text-white mb-6 leading-tight flex flex-col items-start gap-2">
                     <motion.span
                         variants={containerVariants}
                         initial="hidden"
@@ -54,17 +54,17 @@ const Hero = () => {
                     Passionate about building scalable and clean systems while growing into full stack development.
                 </p>
 
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                     <a
                         href="#projects"
-                        className="group flex items-center gap-2 px-8 py-4 bg-cian-neon text-deep-dark font-bold rounded-xl hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(0,242,255,0.2)] hover:shadow-[0_0_30px_rgba(0,242,255,0.4)]"
+                        className="group flex items-center justify-center gap-2 px-8 py-4 bg-cian-neon text-deep-dark font-bold rounded-xl hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(0,242,255,0.2)] hover:shadow-[0_0_30px_rgba(0,242,255,0.4)] w-full sm:w-auto"
                     >
                         View Projects
                         <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                     </a>
                     <a
                         href="#contact"
-                        className="flex items-center gap-2 px-8 py-4 border border-glass-border rounded-xl text-white hover:bg-glass-bg hover:border-violet-accent/50 transition-all duration-300"
+                        className="flex items-center justify-center gap-2 px-8 py-4 border border-glass-border rounded-xl text-white hover:bg-glass-bg hover:border-violet-accent/50 transition-all duration-300 w-full sm:w-auto"
                     >
                         <Code2 size={20} className="text-violet-accent" />
                         Contact Me

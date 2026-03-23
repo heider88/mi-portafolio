@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import { Github, ExternalLink, Code } from 'lucide-react'
-import proyectoIngesoftImg from '../assets/images/proyecto_ingesoft.png'
+import proyectoIngesoftImg from '../assets/images/dame_un_break.png'
 import spotifyCloneImg from '../assets/images/spotify_clone.png'
-import manualUsuarioImg from '../assets/images/manual_usuario.png'
 
 const Projects = () => {
     const projects = [
@@ -19,13 +18,6 @@ const Projects = () => {
             tags: ['JavaScript', 'CSS', 'Glassmorphism', 'Vanilla JS'],
             github: 'https://github.com/heider88/spotify-premium-clone',
             image: spotifyCloneImg
-        },
-        {
-            title: 'Manual-de-usuario',
-            description: 'Documentación y manual de usuario para proyectos desarrollados, enfocado en guiar la navegación y el uso del sistema final.',
-            tags: ['Documentation', 'User Manual', 'Tech Writing'],
-            github: 'https://github.com/heider88/Manual-de-usuario',
-            image: manualUsuarioImg
         }
     ]
 
@@ -81,13 +73,6 @@ const Projects = () => {
                                     aria-label="View Source on GitHub"
                                 >
                                     <Github size={20} />
-                                </a>
-                                <a
-                                    href="#"
-                                    className="p-2 rounded-lg bg-deep-dark border border-glass-border text-gray-400 hover:text-white hover:border-cian-neon transition-all"
-                                    aria-label="View Live Project"
-                                >
-                                    <ExternalLink size={20} />
                                 </a>
                             </div>
                         </div>
