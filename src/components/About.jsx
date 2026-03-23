@@ -45,36 +45,36 @@ const About = () => {
                             </div>
 
                             {/* JSON Code Area */}
-                            <div className="p-6 md:p-8 font-mono text-sm md:text-base whitespace-pre overflow-x-auto text-gray-300">
+                            <div className="p-4 md:p-8 font-mono text-sm md:text-base whitespace-pre-wrap overflow-x-auto text-gray-300">
                                 <span className="text-gray-400">{"{"}</span>
                                 <br />
-                                <span className="text-cyan-400 pl-4">"profile"</span><span className="text-white">: {"{"}</span>
+                                <span className="text-cyan-400 pl-2 md:pl-4">"profile"</span><span className="text-white">: {"{"}</span>
                                 <br />
-                                <span className="text-cyan-400 pl-8">"role"</span><span className="text-white">: </span><span className="text-green-300">"Systems Engineering Student"</span><span className="text-gray-400">,</span>
+                                <span className="text-cyan-400 pl-4 md:pl-8">"role"</span><span className="text-white">: </span><span className="text-green-300">"Systems Engineering Student"</span><span className="text-gray-400">,</span>
                                 <br />
-                                <span className="text-cyan-400 pl-8">"backend"</span><span className="text-white">: {"{"}</span>
+                                <span className="text-cyan-400 pl-4 md:pl-8">"backend"</span><span className="text-white">: {"{"}</span>
                                 <br />
-                                <span className="text-cyan-400 pl-12">"language"</span><span className="text-white">: </span><span className="text-green-300">"Python"</span><span className="text-gray-400">,</span>
+                                <span className="text-cyan-400 pl-6 md:pl-12">"language"</span><span className="text-white">: </span><span className="text-green-300">"Python"</span><span className="text-gray-400">,</span>
                                 <br />
-                                <span className="text-cyan-400 pl-12">"architectures"</span><span className="text-white">: [</span><span className="text-green-300">"REST APIs"</span><span className="text-white">]</span><span className="text-gray-400">,</span>
+                                <span className="text-cyan-400 pl-6 md:pl-12">"architectures"</span><span className="text-white">: [</span><span className="text-green-300">"REST APIs"</span><span className="text-white">]</span><span className="text-gray-400">,</span>
                                 <br />
-                                <span className="text-cyan-400 pl-12">"focus"</span><span className="text-white">: </span><span className="text-green-300">"Clean Code principles"</span>
+                                <span className="text-cyan-400 pl-6 md:pl-12">"focus"</span><span className="text-white">: </span><span className="text-green-300">"Clean Code principles"</span>
                                 <br />
-                                <span className="text-white pl-8">{"}"}</span><span className="text-gray-400">,</span>
+                                <span className="text-white pl-4 md:pl-8">{"}"}</span><span className="text-gray-400">,</span>
                                 <br />
-                                <span className="text-cyan-400 pl-8">"data"</span><span className="text-white">: {"{"}</span>
+                                <span className="text-cyan-400 pl-4 md:pl-8">"data"</span><span className="text-white">: {"{"}</span>
                                 <br />
-                                <span className="text-cyan-400 pl-12">"type"</span><span className="text-white">: </span><span className="text-green-300">"Relational Databases"</span><span className="text-gray-400">,</span>
+                                <span className="text-cyan-400 pl-6 md:pl-12">"type"</span><span className="text-white">: </span><span className="text-green-300">"Relational Databases"</span><span className="text-gray-400">,</span>
                                 <br />
-                                <span className="text-cyan-400 pl-12">"flow"</span><span className="text-white">: </span><span className="text-green-300">"Backend-to-Frontend"</span>
+                                <span className="text-cyan-400 pl-6 md:pl-12">"flow"</span><span className="text-white">: </span><span className="text-green-300">"Backend-to-Frontend"</span>
                                 <br />
-                                <span className="text-white pl-8">{"}"}</span><span className="text-gray-400">,</span>
+                                <span className="text-white pl-4 md:pl-8">{"}"}</span><span className="text-gray-400">,</span>
                                 <br />
-                                <span className="text-cyan-400 pl-8">"frontend_learning"</span><span className="text-white">: </span><span className="text-green-300">"React"</span>
+                                <span className="text-cyan-400 pl-4 md:pl-8">"frontend_learning"</span><span className="text-white">: </span><span className="text-green-300">"React"</span>
                                 <br />
-                                <span className="text-white pl-4">{"}"}</span><span className="text-gray-400">,</span>
+                                <span className="text-white pl-2 md:pl-4">{"}"}</span><span className="text-gray-400">,</span>
                                 <br />
-                                <span className="text-cyan-400 pl-4">"status"</span><span className="text-white">: </span><span className="text-green-300">"Ready to build"</span>
+                                <span className="text-cyan-400 pl-2 md:pl-4">"status"</span><span className="text-white">: </span><span className="text-green-300">"Ready to build"</span>
                                 <br />
                                 <span className="text-gray-400">{"}"}</span>
                             </div>
