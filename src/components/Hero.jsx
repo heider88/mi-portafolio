@@ -46,7 +46,7 @@ const Hero = () => {
                             </motion.span>
                         ))}
                     </motion.span>
-                    <span className="text-gradient">Junior Full Stack Developer.</span>
+                    <span className="text-gradient">Full Stack Developer.</span>
                 </h1>
 
                 <p className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
