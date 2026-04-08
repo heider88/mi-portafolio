@@ -6,7 +6,7 @@ import spotifyCloneImg from '../assets/images/spotify_clone.png'
 const Projects = () => {
     const projects = [
         {
-            title: 'Proyecto-ingesoft',
+            title: 'Aplicación de gestión de presupuesto y planificación de compras',
             description: 'Este repositorio tiene como propósito servir de espacio grupal para la clase de Ingeniería de Software. Aquí iremos subiendo y organizando las tareas, talleres, documentación y avances del proyecto...',
             tags: ['Software Engineering', 'Documentation', 'Collaboration'],
             github: 'https://github.com/heider88/Proyecto-ingesoft',
