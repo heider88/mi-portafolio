@@ -1,37 +1,71 @@
 @import "tailwindcss";
 
 @theme {
-  --color-deep-dark: #0B0F19;
-  --color-cian-neon: #00f2ff;
-  --color-violet-accent: #8b5cf6;
-  --color-glass-bg: rgba(255, 255, 255, 0.03);
-  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-base: #070708;
+  --color-surface: #101012;
+  --color-border: #232326;
+  --color-gold: #D4AF37;
+  --color-gold-dim: #D4AF3733;
+  --color-text: #F3F3F2;
+  --color-muted: #8E8E93;
 
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-outfit: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-serif: 'Cinzel', ui-serif, serif;
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
-    @apply bg-deep-dark text-gray-200 antialiased font-sans selection:bg-cian-neon/30 selection:text-cian-neon;
+    background-color: var(--color-base);
+    color: var(--color-text);
+    font-family: var(--font-sans);
   }
 }
 
 @layer utilities {
   .glass-card {
-    @apply bg-glass-bg backdrop-blur-md border border-glass-border rounded-2xl transition-all duration-300;
+    background: rgba(16, 16, 18, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-border);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
-
+  
   .glass-card:hover {
-    @apply border-cian-neon/50 shadow-[0_0_20px_rgba(0,242,255,0.1)] -translate-y-1;
+    border-color: rgba(212, 175, 55, 0.4);
+    background: rgba(16, 16, 18, 0.7);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5), 0 0 20px -5px var(--color-gold-dim);
   }
 
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-cian-neon via-violet-accent to-cian-neon;
+  .text-glow {
+    text-shadow: 0 0 30px var(--color-gold-dim);
+  }
+
+  .bg-aurora {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+      radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.03), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.02), transparent 25%);
+    filter: blur(60px);
+    z-index: -2;
+    pointer-events: none;
+  }
+
+  /* Smooth scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-base);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold);
   }
 }

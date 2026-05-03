@@ -1,80 +1,44 @@
-import { motion } from 'framer-motion'
-import { Server, Database, Code, Wrench } from 'lucide-react'
-
 const Skills = () => {
-    const skillCategories = [
-        {
-            title: 'Programming',
-            icon: <Code className="text-cian-neon" size={32} />,
-            skills: ['Python', 'JavaScript']
-        },
-        {
-            title: 'Backend',
-            icon: <Server className="text-violet-accent" size={32} />,
-            skills: ['REST APIs', 'HTTP', 'JSON', 'OOP']
-        },
-        {
-            title: 'Databases',
-            icon: <Database className="text-cian-neon" size={32} />,
-            skills: ['MySQL', 'PostgreSQL']
-        },
-        {
-            title: 'Tools',
-            icon: <Wrench className="text-violet-accent" size={32} />,
-            skills: ['Git', 'GitHub']
-        }
+    const skills = [
+        { name: 'Prompt Engineering', size: 'text-4xl md:text-5xl', opacity: 'opacity-100' },
+        { name: 'JavaScript', size: 'text-3xl md:text-4xl', opacity: 'opacity-90' },
+        { name: 'Python', size: 'text-4xl md:text-5xl', opacity: 'opacity-90' },
+        { name: 'React', size: 'text-3xl md:text-4xl', opacity: 'opacity-80' },
+        { name: 'Next.js', size: 'text-4xl', opacity: 'opacity-100' },
+        { name: 'Django', size: 'text-3xl', opacity: 'opacity-85' },
+        { name: 'Flutter', size: 'text-4xl md:text-5xl', opacity: 'opacity-95' },
+        { name: 'TypeScript', size: 'text-2xl md:text-3xl', opacity: 'opacity-80' },
+        { name: 'PostgreSQL', size: 'text-3xl', opacity: 'opacity-75' },
+        { name: 'Supabase', size: 'text-3xl', opacity: 'opacity-85' },
+        { name: 'AI Agents', size: 'text-2xl', opacity: 'opacity-70' },
+        { name: 'Docker', size: 'text-2xl', opacity: 'opacity-60' },
+        { name: 'Dart', size: 'text-2xl', opacity: 'opacity-60' },
+        { name: 'Claude', size: 'text-xl', opacity: 'opacity-50' },
     ]
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.1 }
-        }
-    }
-
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0 }
-    }
-
     return (
-        <section id="skills" className="py-20 scroll-mt-20">
-            <div className="flex flex-col items-center mb-16 text-center">
-                <h2 className="text-3xl md:text-5xl font-outfit font-bold text-white mb-4">Technical Stack</h2>
-                <p className="text-gray-400 max-w-xl">Deep foundations in backend systems with an expanding skillset across the full stack.</p>
-            </div>
+        <section id="skills" className="mt-32">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        <span className="text-[#00df81]">Skills</span> and tools
+                    </h2>
+                    <p className="text-[#a1a1aa] leading-relaxed text-lg">
+                        Expert in integrating LLMs to automate complex business processes and deliver high-performance software. Proficient in modern web and mobile frameworks, robust databases, and AI agent automation.
+                    </p>
+                </div>
 
-            <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
-            >
-                {skillCategories.map((category, index) => (
-                    <motion.div
-                        key={index}
-                        variants={itemVariants}
-                        className="glass-card p-6 flex flex-col group"
-                    >
-                        <div className="mb-6 bg-deep-dark/50 inline-block p-4 rounded-xl self-start group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">
-                            {category.icon}
-                        </div>
-                        <h3 className="text-xl font-bold font-outfit text-gray-100 mb-4">{category.title}</h3>
-                        <div className="flex flex-wrap gap-2 mt-auto">
-                            {category.skills.map(skill => (
-                                <span
-                                    key={skill}
-                                    className="px-3 py-1 bg-glass-bg border border-glass-border rounded-md text-sm text-gray-300 group-hover:border-cian-neon/30 group-hover:text-white transition-colors"
-                                >
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                    </motion.div>
-                ))}
-            </motion.div>
+                <div className="flex flex-wrap gap-4 md:gap-6 items-center justify-center lg:justify-end content-center min-h-[300px]">
+                    {skills.map((skill, index) => (
+                        <span 
+                            key={index} 
+                            className={`font-bold ${skill.size} ${skill.opacity} text-white hover:text-[#00df81] transition-colors cursor-default`}
+                        >
+                            {skill.name}
+                        </span>
+                    ))}
+                </div>
+            </div>
         </section>
     )
 }

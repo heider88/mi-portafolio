@@ -1,65 +1,43 @@
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, Github, Send, Phone } from 'lucide-react'
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-20 mb-20 scroll-mt-20">
-            <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="glass-card max-w-4xl mx-auto p-8 md:p-12 text-center"
-            >
-                <div className="inline-flex items-center justify-center p-4 bg-deep-dark rounded-full mb-8 border border-glass-border">
-                    <Send className="text-cian-neon" size={32} />
+        <footer id="contact" className="mt-40 border-t border-border bg-surface/10 pt-32 pb-12 relative overflow-hidden">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-32 bg-gold/5 blur-[80px] rounded-full pointer-events-none"></div>
+
+            <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+                <motion.div 
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                    className="flex flex-col items-center text-center gap-12"
+                >
+                    <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight">
+                        <span className="italic text-muted font-light">Let's create</span><br/>
+                        <span className="text-glow">SOMETHING</span>
+                    </h2>
+                    
+                    <div className="flex flex-col sm:flex-row gap-6 items-center">
+                        <a href="mailto:hnavarroq@unal.edu.co" className="text-xs uppercase tracking-widest bg-gold text-base px-10 py-5 rounded-full hover:bg-white transition-all duration-300 w-full sm:w-auto">
+                            Initiate Contact
+                        </a>
+                        <a href="tel:+573223999930" className="text-xs uppercase tracking-widest px-10 py-5 rounded-full border border-border text-text hover:border-gold transition-all duration-300 w-full sm:w-auto">
+                            +57 3223999930
+                        </a>
+                    </div>
+                </motion.div>
+                
+                <div className="mt-40 pt-10 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6 text-muted text-[10px] uppercase tracking-widest">
+                    <p>&copy; {new Date().getFullYear()} Heider Navarro. All rights reserved.</p>
+                    <div className="flex gap-10">
+                        <a href="https://github.com/heider88" target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">GitHub</a>
+                        <a href="https://www.linkedin.com/in/heider-hailober-navarro-quintero-a20541256" target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">LinkedIn</a>
+                    </div>
                 </div>
-
-                <h2 className="text-3xl md:text-5xl font-outfit font-bold text-white mb-6">Let's Build Something Great</h2>
-                <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
-                    I'm currently looking for new opportunities and open to exciting projects or roles.
-                    Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                </p>
-
-                <div className="flex justify-center gap-6 flex-wrap">
-                    <a
-                        href="mailto:hnavarroq@unal.edu.co"
-                        className="flex items-center gap-2 px-6 py-3 bg-glass-bg border border-glass-border rounded-lg hover:border-cian-neon/50 hover:bg-cian-neon/10 text-white transition-all duration-300 group"
-                    >
-                        <Mail className="text-gray-400 group-hover:text-cian-neon transition-colors" size={20} />
-                        <span className="font-medium">Email Me</span>
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/heider-hailober-navarro-quintero-a20541256"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex items-center gap-2 px-6 py-3 bg-glass-bg border border-glass-border rounded-lg hover:border-violet-accent/50 hover:bg-violet-accent/10 text-white transition-all duration-300 group"
-                    >
-                        <Linkedin className="text-gray-400 group-hover:text-violet-accent transition-colors" size={20} />
-                        <span className="font-medium">LinkedIn</span>
-                    </a>
-
-                    <a
-                        href="https://github.com/heider88"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex items-center gap-2 px-6 py-3 bg-glass-bg border border-glass-border rounded-lg hover:border-white/50 hover:bg-white/10 text-white transition-all duration-300 group"
-                    >
-                        <Github className="text-gray-400 group-hover:text-white transition-colors" size={20} />
-                        <span className="font-medium">GitHub</span>
-                    </a>
-
-                    <a
-                        href="tel:+573223999930"
-                        className="flex items-center gap-2 px-6 py-3 bg-glass-bg border border-glass-border rounded-lg hover:border-green-400/50 hover:bg-green-400/10 text-white transition-all duration-300 group"
-                    >
-                        <Phone className="text-gray-400 group-hover:text-green-400 transition-colors" size={20} />
-                        <span className="font-medium">Phone</span>
-                    </a>
-                </div>
-            </motion.div>
-        </section>
+            </div>
+        </footer>
     )
 }
 
