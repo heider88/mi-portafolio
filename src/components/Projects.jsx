@@ -110,7 +110,7 @@ const Projects = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                        href="https://club-gentleman-saa-s-b2-b2-c.vercel.app" target="_blank" rel="noreferrer" className="block group"
+                        href="https://club-gentleman-barber.vercel.app" target="_blank" rel="noreferrer" className="block group"
                     >
                         <div className="glass-card rounded-2xl overflow-hidden h-[450px] flex flex-col relative">
                             <div className="h-56 overflow-hidden relative border-b border-border bg-surface/30">
