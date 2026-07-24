@@ -21,7 +21,7 @@ const Skills = () => {
             <div className="grid md:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                        <span className="text-[#00df81]">Skills</span> and tools
+                        <span className="text-gold">Skills</span> and tools
                     </h2>
                     <p className="text-[#a1a1aa] leading-relaxed text-lg">
                         Expert in integrating LLMs to automate complex business processes and deliver high-performance software. Proficient in modern web and mobile frameworks, robust databases, and AI agent automation.
@@ -32,7 +32,7 @@ const Skills = () => {
                     {skills.map((skill, index) => (
                         <span 
                             key={index} 
-                            className={`font-bold ${skill.size} ${skill.opacity} text-white hover:text-[#00df81] transition-colors cursor-default`}
+                            className={`font-bold ${skill.size} ${skill.opacity} text-white hover:text-gold transition-colors cursor-default`}
                         >
                             {skill.name}
                         </span>
