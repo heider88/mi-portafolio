@@ -110,7 +110,7 @@ const Projects = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                        href="https://club-gentleman-barber.vercel.app" target="_blank" rel="noreferrer" className="block group"
+                        href="https://www.clubgentlemanformen.com/" target="_blank" rel="noreferrer" className="block group"
                     >
                         <div className="glass-card rounded-2xl overflow-hidden h-[450px] flex flex-col relative">
                             <div className="h-56 overflow-hidden relative border-b border-border bg-surface/30">
@@ -128,7 +128,7 @@ const Projects = () => {
                             <div className="p-8 md:p-10 flex flex-col flex-grow">
                                 <h3 className="text-2xl font-serif text-white mb-4 group-hover:text-gold transition-colors">Club Gentleman SaaS</h3>
                                 <p className="text-muted text-sm leading-relaxed mb-6 line-clamp-3 font-light">
-                                    Automated scheduling SaaS with collision-prevention logic, PostgreSQL JSONB, and real-time orchestration for multi-tenant environments.
+                                    Official production platform for premium barbershop. Automated scheduling SaaS with collision-prevention logic and real-time orchestration.
                                 </p>
                                 <div className="flex items-center justify-between mt-auto">
                                     <div className="flex flex-wrap gap-3">
